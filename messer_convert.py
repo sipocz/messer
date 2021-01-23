@@ -8,6 +8,12 @@ print("hello")
 a=list(df["PSA mennyiség: [m3]"])
 ind=list(df["Dátum Idõ"])
 print(a)
-plt.plot(ind,df["PSA mennyiség: [m3]"])
-plt.show()
-print("hello")
+#plt.plot(ind,df["PSA mennyiség: [m3]"])
+#plt.show()
+print("ADFULLER")
+from statsmodels.tsa.stattools import adfuller
+result = adfuller(df[3].values)
+
+print('p-value: %f' % result[1])
+
+print("0.05 alatt kellene lennie")
