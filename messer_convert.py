@@ -21,6 +21,9 @@ ind=list(df["Dátum Idõ"])
 #print(a)
 #plt.plot(ind,df["PSA mennyiség: [m3]"])
 #plt.show();
+df["Dátum Idõ"]=pd.to_datetime(df["Dátum Idõ"],format="%Y.%m.%d %H:%M:%S")
+df.index
+print(df.dtypes)
 print("ADFULLER")
 from statsmodels.tsa.stattools import adfuller
 result = adfuller(df2["PSA mennyiség: [m3]"].values)
@@ -29,4 +32,11 @@ print('p-value: %f' % result[1])
 
 print("0.05 alatt kellene lennie")
 
-print(df.corr(method="spearman"))
+#print(df.corr(method="spearman"))
+print(df.head())
+print(df.columns)
+df.columns=["timeStamp","LIN_V","LIN_P","PSA_M","PSA_P","PSA_Q","NONE"]
+print(df.head())
+df.drop(["NONE"],axis=1,inplace=True)
+print(df.head())
+df.to_csv("C:/messer/data/all.csv")
