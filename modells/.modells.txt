@@ -1,1 +1,20 @@
-HDF5 models
+
+
+
+desc=[  # 202103151609_h5.zip
+        {"node":300,"activation":"tanh","kernel_init":"lecun_normal","drop_frac":0.25},
+        {"node":100,"activation":"tanh","kernel_init":"lecun_normal","drop_frac":0.55},
+        {"node":40,"activation":"tanh","kernel_init":"lecun_normal","drop_frac":0.65},
+        {"node":100,"activation":"tanh","kernel_init":"lecun_normal","drop_frac":0.55},
+        {"node":310,"activation":"tanh","kernel_init":"lecun_normal","drop_frac":0.25},
+        # 
+        #         # jó modell, loss:MSE lr=0.00005 feature range:(-1,1) optimizer: lookahead (adamax ) minibatch: 45
+        # epoch: 200 loss 0.0189
+        #        300 loss 0.0134
+        #        jól tanulja a felső tartományt 
+        #        elmentve 202103151609_h5.zip Github-ra 
+        #        
+        #       
+        #       
+      
+       
