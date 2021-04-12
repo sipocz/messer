@@ -1,7 +1,7 @@
 def printX(a):
   print(a)
   
-def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='rgba(200,0,0,0.3)'):
+def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='rgba(200,0,0,0.3)',title=none):
     '''
     fx: dataFrame
     desc1:column1
@@ -15,11 +15,12 @@ def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='
     '''
     
     #x_=[i for i in range(len(y_pred))]
-
+    if title==none:
+      title=txt1+txt2
     import plotly.express as px
     import plotly.graph_objects as go
     from plotly.subplots import make_subplots
-    fig0 = make_subplots(rows=1, cols=1,)
+    fig0 = make_subplots(rows=1, cols=1,title=title)
     
     fig0.add_trace(
         go.Scatter(x=fx.index, y=fx[desc1], name=txt1,line=dict(color=c1) ,showlegend=True  ),
