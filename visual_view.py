@@ -3,8 +3,6 @@ def printX(a):
   
 def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='rgba(200,0,0,0.3)'):
     '''
-    grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='rgba(200,0,0,0.3)')
-
     fx: dataFrame
     desc1:column1
     txt1: label1
@@ -15,6 +13,7 @@ def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(0,200,0,0.8)', c2='
     c2: color2
 
     '''
+    
     #x_=[i for i in range(len(y_pred))]
 
     import plotly.express as px
