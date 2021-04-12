@@ -1,4 +1,4 @@
-def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c2='rgba(200,0,0,0.3)',title=None):
+def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c2='rgba(200,22,33,0.3)',title=None):
     '''
     fx: dataFrame
     desc1:column1
@@ -6,7 +6,7 @@ def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c
     desc2:column2
     txt2: label2
     ngraf: number of graph
-    c2: color1
+    c1: color1
     c2: color2
     '''
     
