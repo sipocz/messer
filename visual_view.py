@@ -1,4 +1,4 @@
-def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c2='rgba(200,22,33,0.3)',title=None):
+def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c2='rgba(193,99,99,0.8)',title=None):
     '''
     fx: dataFrame
     desc1:column1
