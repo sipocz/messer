@@ -8,6 +8,7 @@ def grafikon(fx,desc1,txt1,desc2="",txt2="",ngraf=2,c1='rgba(35,128,132,0.8)', c
     ngraf: number of graph
     c1: color1
     c2: color2
+    title: graph title
     '''
     
     #x_=[i for i in range(len(y_pred))]
