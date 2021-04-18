@@ -1,4 +1,6 @@
-
+desc [  https://github.com/sipocz/messer/blob/main/modells/model_2_alarm__447_8339.5_4442.6_.hdf5
+        LSTM modell alarmgeneratorhoz 24 in 3 out
+        ]
 
 
 desc=[  # 202103151609_h5.zip
